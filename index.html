@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder By Jawad Shoukat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder By Jawad Shoukat</h1>
+        <p class="intro">Create a professional and dynamic resume in a few easy steps.</p>
+
+        <form id="resumeForm">
+            <!-- Step 1: Personal Information -->
+            <fieldset id="step1">
+                <legend> Personal Information</legend>
+
+                <input type="text" id="name" name="name" placeholder="Enter your first name" required>
+
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+     
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+     
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <input type="tel" id="phone" name="phone" placeholder="https://linkedin.com/in/yourprofile" required>
+
+
+                <label for="profilePicture">Profile Picture:</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+
+                
+            </fieldset>
+
+            <!-- Education -->
+            <fieldset id="step2">
+                <legend>Education</legend>
+                <textarea id="education" name="education" rows="5" placeholder="Enter your education background" required></textarea>
+            </fieldset>
+
+            <!-- Step 3: Experience -->
+            <fieldset id="step3">
+                <legend>Experience</legend>
+                <textarea id="experience" name="experience" rows="5" placeholder="Enter your work experience" required></textarea>
+            </fieldset>
+
+            <!-- Step 4: Skills -->
+            <fieldset id="step4">
+                <legend> Skills</legend>
+                <textarea id="skills" name="skills" rows="5" placeholder="Enter your skills" required></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <P>UPDATED RESUME BUILDER</P>
+
+        <!-- Resume Output -->
+        <div id="resumeOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
